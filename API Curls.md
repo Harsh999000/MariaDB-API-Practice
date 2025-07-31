@@ -23,13 +23,13 @@ curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/create-database
 ### 🔹 Get All Databases
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/get-databases'
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/get-databases'
 ```
 
 ### 🔹 Delete Database
 
 ```bash
-curl --location --request DELETE 'https://f164f1086b2a.ngrok-free.app/default-sql/delete-database' \
+curl --location --request DELETE 'https://d8f0dddda10d.ngrok-free.app/default-sql/delete-database' \
 --header 'Content-Type: application/json' \
 --data '{
     "dbName" : "test4"
@@ -43,7 +43,7 @@ curl --location --request DELETE 'https://f164f1086b2a.ngrok-free.app/default-sq
 ### 🔹 Create User
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/create-user' \
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/create-user' \
 --header 'Content-Type: application/json' \
 --data '{
     "username" : "test1",
@@ -57,13 +57,13 @@ curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/create-user' \
 ### 🔹 Get All Users
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/get-users'
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/get-users'
 ```
 
 ### 🔹 Get User Privileges
 
 ```bash
-curl --location --request GET 'https://f164f1086b2a.ngrok-free.app/default-sql/get-user-privileges' \
+curl --location --request GET 'https://d8f0dddda10d.ngrok-free.app/default-sql/get-user-privileges' \
 --header 'Content-Type: application/json' \
 --data '{
     "username" : "test3",
@@ -74,7 +74,7 @@ curl --location --request GET 'https://f164f1086b2a.ngrok-free.app/default-sql/g
 ### 🔹 Grant User Access
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/user-grant-access' \
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/user-grant-access' \
 --header 'Content-Type: application/json' \
 --data '{
     "username" : "test3",
@@ -88,7 +88,7 @@ curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/user-grant-acce
 ### 🔹 Revoke User Access
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/user-revoke-access' \
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/user-revoke-access' \
 --header 'Content-Type: application/json' \
 --data '{
     "username" : "test3",
@@ -102,7 +102,7 @@ curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/user-revoke-acc
 ### 🔹 Delete User
 
 ```bash
-curl --location --request DELETE 'https://f164f1086b2a.ngrok-free.app/default-sql/delete-user' \
+curl --location --request DELETE 'https://d8f0dddda10d.ngrok-free.app/default-sql/delete-user' \
 --header 'Content-Type: application/json' \
 --data '{
     "username" : "test4",
@@ -117,7 +117,7 @@ curl --location --request DELETE 'https://f164f1086b2a.ngrok-free.app/default-sq
 ### 🔹 Create Table
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/create-table' \
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/create-table' \
 --header 'Content-Type: application/json' \
 --data '{
   "databasename": "test1",
@@ -140,19 +140,19 @@ curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/create-table' \
 ### 🔹 Get Tables in a Database
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/get-tables?databasename=test1'
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/get-tables?databasename=test1'
 ```
 
 ### 🔹 Get Table Details
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/get-table-details?databasename=test1&tablename=table2'
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/get-table-details?databasename=test1&tablename=table2'
 ```
 
 ### 🔹 Add Column
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/add-column' \
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/add-column' \
 --header 'Content-Type: application/json' \
 --data '{
     "databasename": "test1",
@@ -169,7 +169,7 @@ curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/add-column' \
 ### 🔹 Delete Column
 
 ```bash
-curl --location --request DELETE 'https://f164f1086b2a.ngrok-free.app/default-sql/delete-column?databasename=test1&tablename=table1&columnname=name'
+curl --location --request DELETE 'https://d8f0dddda10d.ngrok-free.app/default-sql/delete-column?databasename=test1&tablename=table1&columnname=name'
 ```
 
 ---
@@ -179,7 +179,7 @@ curl --location --request DELETE 'https://f164f1086b2a.ngrok-free.app/default-sq
 ### 🔹 Insert Data into Table
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/insert-data' \
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/insert-data' \
 --header 'Content-Type: application/json' \
 --data '{
   "databasename": "test1",
@@ -197,13 +197,13 @@ curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/insert-data' \
 ### 🔹 Get Table Data
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/get-table-data?databasename=test1&tablename=table2'
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/get-table-data?databasename=test1&tablename=table2'
 ```
 
 ### 🔹 Delete Data from Table
 
 ```bash
-curl --location --request DELETE 'https://f164f1086b2a.ngrok-free.app/default-sql/delete-data' \
+curl --location --request DELETE 'https://d8f0dddda10d.ngrok-free.app/default-sql/delete-data' \
 --header 'Content-Type: application/json' \
 --data '{
   "databasename": "test1",
@@ -216,7 +216,7 @@ curl --location --request DELETE 'https://f164f1086b2a.ngrok-free.app/default-sq
 ### 🔹 Export Table to CSV
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/export-table?databasename=test1&tablename=table1'
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/export-table?databasename=test1&tablename=table1'
 ```
 
 ---
