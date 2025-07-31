@@ -13,7 +13,7 @@ http://localhost:8080 instead of https://f164f1086b2a.ngrok-free.app
 ### 🔹 Create Database
 
 ```bash
-curl --location 'https://f164f1086b2a.ngrok-free.app/default-sql/create-database' \
+curl --location 'https://d8f0dddda10d.ngrok-free.app/default-sql/create-database' \
 --header 'Content-Type: application/json' \
 --data '{
     "dbName" : "test1"
