@@ -4,7 +4,7 @@ This document lists all available cURL requests to interact with the MariaDB man
 
 If you want to miplement this on your laptop use
 
-http://localhost:8080 instead of https://f164f1086b2a.ngrok-free.app
+http://localhost:8080 instead of https://d8f0dddda10d.ngrok-free.app
 
 ---
 
